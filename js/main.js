@@ -78,7 +78,7 @@ initMap = () => {
         scrollWheelZoom: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: '<your MAPBOX API KEY HERE>',
+    mapboxToken: 'pk.eyJ1IjoiZ2FkZ2V0Z2lybGNvZGVzIiwiYSI6ImNqbHlheWlibjA2NnMza3J2N2hqN3hibWYifQ.0cs_xs7jrciIelG-f5ynbw',
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -88,6 +88,18 @@ initMap = () => {
 
   updateRestaurants();
 }
+/* Code from mapbox 
+ * initMap = () => {
+ *  var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+ *
+ *  mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FkZ2V0Z2lybGNvZGVzIiwiYSI6ImNqbHlheWlibjA2NnMza3J2N2hqN3hibWYifQ.0cs_xs7jrciIelG-f5ynbw';
+ *  var map = new mapboxgl.Map({
+ *    container: 'map',
+ *    style: 'mapbox://styles/mapbox/streets-v10'
+ *  });
+ * };
+ */
+
 /* window.initMap = () => {
   let loc = {
     lat: 40.722216,
