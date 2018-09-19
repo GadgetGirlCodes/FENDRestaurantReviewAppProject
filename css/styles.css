@@ -139,6 +139,11 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  /*new rules below this line*/
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
 }
 #restaurants-list li {
   background-color: #fff;
