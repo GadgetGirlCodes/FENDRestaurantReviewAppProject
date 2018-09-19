@@ -38,6 +38,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  /*new rules below this line*/
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 #footer {
   background-color: #444;
@@ -248,7 +251,9 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  /*width: 50%;*/
+  /*new rules below this line*/
+  max-width: 720px;
 }
 #reviews-container {
   padding: 30px 40px 80px;
