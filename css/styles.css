@@ -116,7 +116,7 @@ nav h1 a {
 .filter-options {
   width: 100vw; /*changed % to vw*/
   height: 100%; /*changed*/
-  background-color: #3397DB;
+  background-color: #006cb5;
   align-items: center;
   /*New values below this line*/
   display: flex;
