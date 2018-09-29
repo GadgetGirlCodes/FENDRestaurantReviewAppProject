@@ -88,30 +88,6 @@ initMap = () => {
 
   updateRestaurants();
 }
-/* Code from mapbox 
- * initMap = () => {
- *  var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
- *
- *  mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FkZ2V0Z2lybGNvZGVzIiwiYSI6ImNqbHlheWlibjA2NnMza3J2N2hqN3hibWYifQ.0cs_xs7jrciIelG-f5ynbw';
- *  var map = new mapboxgl.Map({
- *    container: 'map',
- *    style: 'mapbox://styles/mapbox/streets-v10'
- *  });
- * };
- */
-
-/* window.initMap = () => {
-  let loc = {
-    lat: 40.722216,
-    lng: -73.987501
-  };
-  self.map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: loc,
-    scrollwheel: false
-  });
-  updateRestaurants();
-} */
 
 /**
  * Update page and map for current restaurants.
@@ -172,6 +148,7 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
+  image.alt = 'Image of restaurant';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
@@ -190,6 +167,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.tabIndex = '3';
   li.append(more)
 
   return li
@@ -210,14 +188,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 } 
-/* addMarkersToMap = (restaurants = self.restaurants) => {
-  restaurants.forEach(restaurant => {
-    // Add marker to the map
-    const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.map);
-    google.maps.event.addListener(marker, 'click', () => {
-      window.location.href = marker.url
-    });
-    self.markers.push(marker);
-  });
-} */
-
