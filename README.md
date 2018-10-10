@@ -1,32 +1,33 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Reviews App Project
 
-## Project Overview: Stage 1
+## Table of Contents
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+* [Goal](#goal)
+* [Access](#access)
+* [Attribution](#attribution)
+* [Contributing](#contributing)
 
-### Specification
+## Goal
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+To optimize a provided web application by making it responsive, accessible, and available offline.
 
-### What do I do from here?
+## Access
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+To access this web app:
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+	1. Clone/Download the repository to your local drive.
+	2. Create a local server using [Python](https://www.python.org/):
+	   * From your console run `python -m http.server 8000`
+	3. With your server running, navigate to `http://localhost:8000`
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+## Attribution
 
-## Leaflet.js and Mapbox:
+Thank you to the [Udacity](https://classroom.udacity.com/nanodegrees/nd001/parts/b29af831-fa50-4fe9-b30d-ad48476664d1/modules/83c4bddc-b362-4e71-8fa1-91f30ba57ab0/lessons/6381510081/concepts/63885494190923) team and [Jake Archibald](https://jakearchibald.com/2014/offline-cookbook/#network-falling-back-to-cache) for helping me to understand Service Workers.
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+Thanks to [Matt Cranford](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/) for his outstanding walkthroughs!
 
-### Note about ES6
+Also, thanks goes to Paul Kinlan's "Adding a Service Worker and Offline into your Web App" for helping me clean up my code. His codelab can be found [here](https://developers.google.com/web/fundamentals/codelabs/offline/)
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+## Contributing
 
-
-
+This repository was created solely for the purpose of completing Udacity's Front End Nanodegree Program. Pull requests are welcome, but may not be accepted.
